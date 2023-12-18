@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stay Hotel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/80f94435b1.js" crossorigin="anonymous"></script>
+</head>
+<body style="margin: 0%; background-color: rgb(13, 14, 14);">
+  <!-- Navigation bar -->
+  <div class="navItems">
+    <div id="logo">
+        <h2 class="logotxt"><a href="index.html" style="text-decoration: none;color: aliceblue;">STAY.</a></h2>
+    </div>
+      <div>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <!-- <li><label for="Rooms">Choose a room</label>
+            <select name="roomLi" id="roomLi">
+            <option value="standard Twin">Standard Twin</option>
+            <option value="executive twin">Executive twin</option>
+            <option value="superior suite">Superior suite</option>
+            <option value="deluxe suite">Deluxe suite</option>
+            <option value="executive suite">Executive suite</option>
+            <option value="deluxe suite">Deluxe suite</option>
+          </select>
+          </li>  -->
+          <li><a href="">Contact us</a></li>
+        </ul>
+      </div>   
+  </div>
+
+  <!-- Form -->
+    <h1 style="text-align: center;color: bisque;">Booking form</h1>
+    <div class="adjust">
+  <form id="bookingForm" onsubmit="return validateAndSubmitForm();" action="script.php" method="post">
+    <label for="customerName">Full-Name:</label>
+    <input type="text" id="customerName" name="customerName" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    <div class="sameline">
+    <label for="checkInDate">Check-in Date:</label>
+    <input type="date" id="checkInDate" name="checkInDate" required>
+    <label for="roomType">Room Type:</label>
+    <select id="roomType" name="roomType" required>
+        <!-- Room Types -->
+        <option value="standard_twin">Standard Twin</option>
+        <option value="executive_twin">Executive Twin</option>
+        <option value="superior_suite">Superior Twin</option>
+        <option value="deluxe_suite">Deluxe Suite</option>
+        <option value="executive_suite">Executive Suite</option>
+        <option value="presidential_suite">Presidential Suite</option>
+    </select>
+</div>
+    <label for="numOfPersons">Number of Check-in Persons:</label>
+    <input type="number" id="numOfPersons" name="numOfPersons" min="1" required>
+
+    <input type="submit" value="Submit Booking" id="submitform">
+</form>
+</div>
+<p>If you have any specific query please feel free to <a href="Contact.html">Contact us</a></p> 
+
+
+    
+<!-- Footer -->
+
+
+    <footer>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    <div class="flex1">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+          <p> SISTC St</p>
+          <p>Circular Quay, Sydney NSW</p>
+          <p>Phone: +61- 410000000</p>
+          <p>Email: info@s20230440.com</p>
+        <ul class="social-media-icons">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div id="map">
+          <img src="Photos/map.png" width="600" height="200" >
+      </div>
+    </div>
+      <br>
+    <div class="footer-bottom">
+      <p>&copy; 2023 STAY Booking Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+<!-- script -->
+  <script src='script.js'></script>
+  
+
+
+</body>
+</html>
