@@ -226,7 +226,9 @@ footer
   display:flex;
   justify-content: center;
 }
+
 /* About page */
+
 .about, .founderMSG
 {
   background-color: #1d1b1b;
@@ -302,8 +304,6 @@ input, select {
 .sameline{
   display: flex;
 }
-
-
 
 
 
