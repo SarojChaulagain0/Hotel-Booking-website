@@ -20,18 +20,15 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     echo "Invalid request.";
 }
 
-
 $stmt = $conn->prepare("SELECT COUNT(*) FROM bookings WHERE RoomTypeID = ?");
 $stmt->bind_param("i", $roomType);
 $stmt->execute();
 
-// Bind the result variable
 $stmt->bind_result($bookingsCount);
 
 // Fetch the result
 $stmt->fetch();
 
-// Close the statement
 $stmt->close();
 
 // Adjusting the maximum logic according to assignment specification
