@@ -81,15 +81,6 @@ CREATE TABLE `customers` (
 
 --
 -- Dumping data for table `customers`
---
-
-INSERT INTO `customers` (`CustomerID`, `FullName`, `Email`, `Phone`) VALUES
-(26, 'Saroj Chaulagain', 'sarojchaulagain73@gmail.com', '0415858585'),
-(27, 'Saroj Chaulagain', 'sarojchaulagain73@gmail.com', '0415858585'),
-(28, 'Saroj Chaulagain', 'sarojchaulagain73@gmail.com', '0415858585'),
-(29, 'Saroj Chaulagain', 'sarojchaulagain73@gmail.com', '0415858585'),
-(30, 'Saroj Chaulagain', 'sarojchaulagain73@gmail.com', '0415858585'),
-(31, 'Saroj Chaulagain', 'sarojchaulagain73@gmail.com', '0415858585');
 
 -- --------------------------------------------------------
 
