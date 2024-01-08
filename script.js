@@ -71,29 +71,29 @@ function validateAndSubmitForm() {
 
 //Checking availability
 
-function checkAvailability(roomType) {
-  // Make an AJAX request to check availability
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'checkAvailability.php?roomType=' + roomType, true);
+// function checkAvailability(roomType) {
+//   // Make an AJAX request to check availability
+//   var xhr = new XMLHttpRequest();
+//   xhr.open('GET', 'checkAvailability.php?roomType=' + roomType, true);
 
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        //availability status
-        var response = xhr.responseText;
-        if (response === 'available') {
-          alert('The room is available for booking!');
-        } else if (response === 'booked') {
-          alert('Sorry, the rooms for this type are booked. Please try another room.');
-        } else {
-          alert(response);
-        }
-      } else {
-        //In case ther server request fails
-        alert('Error checking availability. Status code: ' + xhr.status);
-      }
-    }
-  };
+//   xhr.onreadystatechange = function () {
+//     if (xhr.readyState === 4) {
+//       if (xhr.status === 200) {
+//         //availability status
+//         var response = xhr.responseText;
+//         if (response === 'available') {
+//           alert('The room is available for booking!');
+//         } else if (response === 'booked') {
+//           alert('Sorry, the rooms for this type are booked. Please try another room.');
+//         } else {
+//           alert(response);
+//         }
+//       } else {
+//         //In case ther server request fails
+//         alert('Error checking availability. Status code: ' + xhr.status);
+//       }
+//     }
+//   };
 
-  xhr.send();
-}
+//   xhr.send();
+// }
